@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-arabic: 'Amiri', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  
+  --color-diwan-darkest: #03120d;
+  --color-diwan-deep: #06221a;
+  --color-diwan-emerald: #0b3d30;
+  --color-diwan-surface: #0e3025;
+  --color-diwan-gold: #c5a059;
+  --color-diwan-gold-light: #dfba73;
+  --color-diwan-gold-dark: #8a6a2c;
+  --color-diwan-parchment: #fdfaf3;
+  --color-diwan-ivory: #eadecd;
+  --color-diwan-crimson: #8b181b;
+}
+
+/* Custom ornamental background grid with subtle geometric motif */
+.bg-arabesque-pattern {
+  background-color: #03120d;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(197, 160, 89, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(197, 160, 89, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(197, 160, 89, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px, 32px 32px;
+}
+
+.bg-paper-texture {
+  background-color: #08241c;
+  background-image: radial-gradient(ellipse at top, rgba(197, 160, 89, 0.12) 0%, transparent 70%);
+}
+
+.stamp-border {
+  border: 3px double #c5a059;
+}
+
+.stamp-crimson {
+  border: 2px dashed #b91c1c;
+  color: #ef4444;
+}
+
+/* Gold foil text shimmer */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7e2a9 0%, #c5a059 50%, #9e7d3b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar in Diwan colors */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #03120d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #194437;
+  border-radius: 4px;
+  border: 1px solid #c5a059;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}

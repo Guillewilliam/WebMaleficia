@@ -1,0 +1,6 @@
+{
+  "name": "Diwan an-Nizam al-Abadi | Diván del Orden Eterno",
+  "description": "Portal institucional satírico del Diván del Orden Eterno (ديوان النظام الأبدي): comunicados de estado, evaluación oficial de sumisión burocrática y archivos clasificados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
